@@ -11,7 +11,7 @@ const Title = () => {
       <h1>Ramdhan 2022 Food Ration Distribution</h1>
       
     <div>
-      <h2> Success due to all the good hard work of Umar Kanjoli and team!!</h2>
+      <h2 > Success due to all the <span className='underline'>GOOD HARD WORK</span> of <span>UMAR KANJOLI & TEAM!!</span></h2>
       <h2>Pictures</h2>
       </div>
     </div>

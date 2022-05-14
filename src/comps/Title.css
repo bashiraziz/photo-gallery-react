@@ -4,3 +4,16 @@
   margin-right: auto;
   width: 50%;
 }
+
+.neon-text{
+ color: black;
+  text-shadow:
+  0 0 10px #fff,
+  0 0 18px #fff,
+  
+  0 0 140px rgb(75,34,40);
+}
+
+.underline{
+ text-decoration: underline;
+}
