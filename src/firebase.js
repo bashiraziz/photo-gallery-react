@@ -3,14 +3,14 @@
  import 'firebase/firestore'
  
  // Your web app's Firebase configuration
- var firebaseConfig = {
-    apiKey: "AIzaSyCNkX-Flgcxbx4HtuBA90r4ze8KEYonDA4",
-    authDomain: "ninja-firegram-b6ae6.firebaseapp.com",
-    projectId: "ninja-firegram-b6ae6",
-    storageBucket: "ninja-firegram-b6ae6.appspot.com",
-    messagingSenderId: "774808631534",
-    appId: "1:774808631534:web:69ae3f2de77261e5465bff"
-  };
+ const firebaseConfig = {
+  apiKey: "AIzaSyBewrmSZ8pIkoy7uL13JSZGvGRAx6g39Xw",
+  authDomain: "ramdhan2022-food-distribution.firebaseapp.com",
+  projectId: "ramdhan2022-food-distribution",
+  storageBucket: "ramdhan2022-food-distribution.appspot.com",
+  messagingSenderId: "438098620154",
+  appId: "1:438098620154:web:c1e58d32281a8f849e2343"
+};
   // Initialize Firebase
   firebase.initializeApp(firebaseConfig);
 
