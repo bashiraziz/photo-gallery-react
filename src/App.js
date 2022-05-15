@@ -1,13 +1,12 @@
 import React from 'react';
-import Title from './comps/Title'
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 import Accounting from './comps/Accounting';
 import Navbar from './comps/navbar/Navbar';
 import Pictures from './comps/pictures/Pictures';
-import HomePagePic from './comps/homePagePic/HomePagePic';
 import Receipts from './comps/Receipts';
 import Home from './comps/Home';
 import LocationsDataTable from './comps/LocationsDataTable';
+import Donations from './comps/Donations';
 //import UploadForm from './comps/UploadForm';
 
 function App() {
@@ -25,7 +24,8 @@ function App() {
           <Route path="receipts" element={<Receipts />} />
           <Route path="/home" element={<Home />} /> 
           <Route path="/" element={<Home /> } />
-          <Route path='/locations' element={<LocationsDataTable />} />
+          <Route path="/locations" element={<LocationsDataTable />} />
+          <Route path="/donations" element={<Donations />} />
         </Routes>
       </div>
     </Router>
