@@ -13,8 +13,8 @@
   border: #333;
 
 }
-.navbar .logo {
-  font-weight: bold;
+.navbar .header {
+  font-weight:normal;
   color: var(--heading-color);
   letter-spacing: 1px;
   display: flex;
