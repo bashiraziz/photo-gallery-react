@@ -7,7 +7,7 @@ export default function Receipts() {
   <>
    <div>
     <h1> Receipts</h1>
-    <h3>This is the Receipts page</h3>
+    <h3>This is the Receipts page. Receipts to be posted soon</h3>
    </div>
   </>
  )
