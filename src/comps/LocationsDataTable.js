@@ -4,7 +4,7 @@ import { DataGrid } from '@mui/x-data-grid'
 import data from '../data.json'
 
 const columns = [
-  { field: 'Location', headerName: 'Location', width: 400,  },
+  { field: 'Location', headerName: 'Location', width: 600,  },
   { field: 'Beneficiaries', headerName: 'Beneficiaries', width: 300 },
   { field: 'Phone Number', headerName: 'Phone Number', width: 300 },
   { field: 'Leader', headerName: 'Leader', width: 300 },
