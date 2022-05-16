@@ -4,24 +4,21 @@ import { DataGrid } from '@mui/x-data-grid'
 import data from '../data.json'
 
 const columns = [
-  { field: 'location', headerName: 'Location', width: 400,  },
-  { field: 'beneficiaries', headerName: 'Beneficiaries', width: 300 },
-  { field: 'phone', headerName: 'Phone Number', width: 300 },
-  { field: 'leader', headerName: 'Leader', width: 300 },
+  { field: 'Location', headerName: 'Location', width: 400,  },
+  { field: 'Beneficiaries', headerName: 'Beneficiaries', width: 300 },
+  { field: 'Phone Number', headerName: 'Phone Number', width: 300 },
+  { field: 'Leader', headerName: 'Leader', width: 300 },
 ]
 
 const LocationsDataTable = () => {
 
-  const [tableData, setTableData] = useState([])
+  const [tableData, setTableData] = useState()
 
   useEffect(() => {
     setTableData(
       data.map((doc) => ({
         id: doc.id,
-        location: doc.Location,
-        beneficiaries: doc.Beneficiaries,
-        phone: doc['Phone Number'],
-        leader: doc.Leader,
+        ...doc
 
         }))
     );
