@@ -27,7 +27,7 @@
   {
     "ID": 6,
     "Donor": "F",
-    "Amount": 802
+    "Amount": 900
   },
   {
     "ID": 7,
@@ -67,7 +67,7 @@
   {
     "ID": 15,
     "Donor": "Total Donations",
-    "Amount": "10,637"
+    "Amount": "10,735"
   },
   {
     "ID": "",
@@ -86,6 +86,11 @@
   },
   {
     "ID": 19,
+    "Donor": "Sent to Lira - 5/16/2022",
+    "Amount": "(98)"
+  },
+  {
+    "ID": 20,
     "Donor": "Balance",
     "Amount": "-"
   }

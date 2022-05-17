@@ -3,8 +3,8 @@ import { DataGrid } from '@mui/x-data-grid'
 import data from '../donations.json'
 
 const columns = [
-  { field: 'donor', headerName: 'Donor', width: 300,  },
-  { field: 'amount', headerName: 'Amount', width: 300 },
+  { field: 'Donor', headerName: 'Donor', width: 300,  },
+  { field: 'Amount', headerName: 'Amount', width: 300 },
  
 ]
 
@@ -16,9 +16,7 @@ export default function Donations() {
     setTableData(
       data.map((doc) => ({
         id: doc.ID,
-        donor: doc.Donor,
-        amount: doc.Amount,
-
+        ...doc
         }))
     );
 

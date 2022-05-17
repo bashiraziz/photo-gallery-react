@@ -4,14 +4,14 @@ import { DataGrid } from '@mui/x-data-grid'
 import data from '../AccountingDataGrid.json'
 
 const columns = [
-  { field: 'date', headerName: 'Date', width: 100,  },
-  { field: 'description', headerName: 'Description', width: 550 },
-  { field: 'receipt', headerName: 'Receipt #', width: 100 },
-  { field: 'quantity', headerName: 'Quantity', width: 100 },
-  { field: 'category', headerName: 'Category', width: 150 },
-  { field: 'received', headerName: 'Received (UGX)', width: 200 },
-  { field: 'disbursed', headerName: 'Disbursed (UGX)', width: 200 },
-  { field: 'balance', headerName: 'Balance', width: 200 },
+  { field: 'Date', headerName: 'Date', width: 100,  },
+  { field: 'Description', headerName: 'Description', width: 550 },
+  { field: 'Receipt  no #/Ref #', headerName: 'Receipt #', width: 100 },
+  { field: 'Quantity in kgs/pkts/ltrs', headerName: 'Quantity', width: 100 },
+  { field: 'Category', headerName: 'Category', width: 150 },
+  { field: 'In', headerName: 'Received (UGX)', width: 200 },
+  { field: 'Out', headerName: 'Disbursed (UGX)', width: 200 },
+  { field: 'Balance', headerName: 'Balance', width: 200 },
 ]
 
 export default function Accounting() {
@@ -22,14 +22,7 @@ export default function Accounting() {
     setTableData(
       data.map((doc) => ({
         id: doc.ID,
-        date: doc.Date,
-        description: doc.Description,
-        receipt: doc["Receipt  no #/Ref #"],
-        quantity: doc["Quantity in kgs/pkts/ltrs"],
-        category: doc.Category,
-        received: doc.In,
-        disbursed: doc.Out,
-        balance: doc.Balance,
+        ...doc,
 
         }))
     );

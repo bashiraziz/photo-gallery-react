@@ -1,22 +1,22 @@
 import React from 'react'
 import {useState} from 'react';
-import ImageGrid from '../ImageGrid';
+import ImageGrid from '../ReceiptsGrid';
 import Modal from '../Modal';
 //import styles
-import './Pictures.css'
+import './Receipts.css'
 
-export default function Pictures() {
- const [selectedimg,setSelectedImg]=useState(null);
+export default function Receipts() {
+ const [selectedReceipt,setSelectedReceipt]=useState(null);
 return(
 <>
    
 
-<ImageGrid setSelectedImg={setSelectedImg} />
+<ImageGrid setSelectedReceipt={setSelectedReceipt} />
 
 {
-  selectedimg &&
-   <Modal selectedimg={selectedimg}
-    setSelectedImg={setSelectedImg} />
+  selectedReceipt &&
+   <Modal selectedReceipt={selectedReceipt}
+    setSelectedReceipt={setSelectedReceipt} />
 }
 </>
 
