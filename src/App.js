@@ -7,7 +7,7 @@ import Receipts from './comps/Receipts';
 import Home from './comps/Home';
 import LocationsDataTable from './comps/LocationsDataTable';
 import Donations from './comps/Donations';
-//import UploadForm from './comps/UploadForm';
+import UploadForm from './comps/UploadForm';
 
 function App() {
   
@@ -31,7 +31,7 @@ function App() {
     </Router>
       
     <div className="App">
-      {/* <UploadForm/> */}  
+      <UploadForm/>  
     </div>
     
     </>
